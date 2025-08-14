@@ -1,17 +1,17 @@
-local Fluent = loadstring(game:HttpGet("https://github.com/dawid-scripts/Fluent/releases/latest/download/main.lua"))()
-local SaveManager = loadstring(game:HttpGet("https://raw.githubusercontent.com/dawid-scripts/Fluent/master/Addons/SaveManager.lua"))()
-local InterfaceManager = loadstring(game:HttpGet("https://raw.githubusercontent.com/dawid-scripts/Fluent/master/Addons/InterfaceManager.lua"))()
+local Library = loadstring(game:HttpGetAsync("https://github.com/ActualMasterOogway/Fluent-Renewed/releases/latest/download/Fluent.luau", true))()
+local SaveManager = loadstring(game:HttpGet("https://raw.githubusercontent.com/ActualMasterOogway/Fluent-Renewed/refs/heads/main/Addons/SaveManager.luau"))()
+local InterfaceManager = loadstring(game:HttpGet("https://raw.githubusercontent.com/ActualMasterOogway/Fluent-Renewed/refs/heads/main/Addons/InterfaceManager.luau"))()
 
 local grabbables = Workspace:FindFirstChild("Grabbable")
 local RS =  game:GetService("ReplicatedStorage")
-local DropItem = RS.Remotes.DropItem
-local PickupItem = RS.Remotes.PickupItem
-local Interact = RS.Remotes.Interact
+local DropItem = RS.Remotes:FindFirstChild("DropItem")
+local PickupItem = RS.Remotes:FindFirstChild("PickupItem")
+local Interact = RS.Remotes:FindFirstChild("Interact")
 local Aprons = RS.Apron
 local CustomizationHandler = RS.Remotes.CustomizationHandler
 local player = game:GetService("Players").LocalPlayer
 local character = player.Character
-local Buttons = Workspace.Important.Buttons
+local Buttons = Workspace.Important:FindFirstChild("Buttons")
 
 local Window = Fluent:CreateWindow({
     Title = "Ramen Hub",
