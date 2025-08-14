@@ -1,4 +1,4 @@
-local Library = loadstring(game:HttpGetAsync("https://github.com/ActualMasterOogway/Fluent-Renewed/releases/latest/download/Fluent.luau", true))()
+local Fluent = loadstring(game:HttpGetAsync("https://github.com/ActualMasterOogway/Fluent-Renewed/releases/latest/download/Fluent.luau", true))()
 local SaveManager = loadstring(game:HttpGet("https://raw.githubusercontent.com/ActualMasterOogway/Fluent-Renewed/refs/heads/main/Addons/SaveManager.luau"))()
 local InterfaceManager = loadstring(game:HttpGet("https://raw.githubusercontent.com/ActualMasterOogway/Fluent-Renewed/refs/heads/main/Addons/InterfaceManager.luau"))()
 
@@ -37,9 +37,9 @@ local Tabs = {
 
 Tabs.Main:AddButton({
         Title = "Instant 75 level + money",
-        Description = "money and level.",
+        Description = "Instant 75 level + money",
         Callback = function()
-            loadstring(game:HttpGet("https://raw.githubusercontent.com/coopers1337/ramenhub/refs/heads/main/Instant75level.lua"))()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/coopers1337/ramenhub/refs/heads/main/Instant75level.lua"))()
         end
 })
 
