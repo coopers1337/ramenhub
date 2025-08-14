@@ -36,6 +36,14 @@ local Tabs = {
 }
 
 Tabs.Main:AddButton({
+        Title = "Instant 75 level + money",
+        Description = "money and level.",
+        Callback = function()
+            loadstring(game:HttpGet("https://raw.githubusercontent.com/coopers1337/ramenhub/refs/heads/main/Instant75level.lua"))()
+        end
+})
+
+Tabs.Main:AddButton({
         Title = "Action Mod",
         Description = "modify action speeds.",
         Callback = function()
